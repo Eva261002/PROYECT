@@ -1,0 +1,101 @@
+/* Estilos base */
+.notifications-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.notifications-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.notifications-header {
+    background-color: #4a6fa5;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.notifications-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Navegación */
+.notifications-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    gap: 15px;
+}
+
+.notifications-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.notifications-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Lista de notificaciones demo */
+.notification-list {
+    margin-top: 20px;
+}
+
+.notification.demo {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 15px;
+}
+
+.notification.demo.unread {
+    border-left: 4px solid #4a6fa5;
+    background-color: #f0f7ff;
+}
+
+.notification-icon {
+    font-size: 1.5em;
+    color: #4a6fa5;
+}
+
+.notification-content h3 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+}
+
+.notification-content p {
+    margin: 0 0 5px 0;
+    color: #555;
+}
+
+.notification-content small {
+    color: #777;
+    font-size: 0.8em;
+}
+
+.demo-message {
+    background-color: #e9f5ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.demo-message i {
+    font-size: 1.5em;
+    color: #4a6fa5;
+}

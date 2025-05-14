@@ -1,0 +1,35 @@
+{% extends "books/base.html" %}
+{% load static %}
+
+{% block title %}
+<title>Books Index</title>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block nav %}
+    {% include "books_nav.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="books-container">
+
+    <nav class="books-menu">
+        <ul>
+           
+            <li><a href="{% url 'books:list' %}">libros</a></li>
+           
+        </ul>
+    </nav>
+
+    <h1>Books Index</h1>
+    <p class="welcome-message">Bienvenido al sistema de gestión de libros.</p>
+
+    {% endblock  %}
+
+ 
+
+
+ 

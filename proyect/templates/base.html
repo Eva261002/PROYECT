@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>{% block title %}Mi Proyecto{% endblock %}</title>
+</head>
+
+<body class="proyect-body">
+   <header class="proyect-header">
+      {% include 'nav.html' %}
+      {% block navbar %}{% endblock %}
+   </header>
+   
+    {% block h1 %}
+    <h1 class="proyect-title">Mi Proyecto</h1> 
+    {% endblock %}
+
+   <main class="proyect-main">
+      {% block content %}{% endblock %}
+   </main>
+
+    <footer class="proyect-footer">
+        {% block footer %}
+        <p>Proyecto © {% now "Y" %}</p>
+        {% endblock %}
+    </footer>
+</body>
+</html>
