@@ -1,0 +1,42 @@
+{% extends "notifications/base.html" %}
+{% load static %}
+
+
+{% block title %}<title>Lista Demo de Notificaciones</title>{% endblock %}
+
+{% block notifications_content %}
+<div class="demo-notifications">
+    <h2><i class="fas fa-code"></i> Lista Demo (Sin modelos)</h2>
+    
+    <div class="notification-list">
+        <!-- Notificación 1 -->
+        <div class="notification demo unread">
+            <div class="notification-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="notification-content">
+                <h3>Bienvenido al sistema</h3>
+                <p>Esta es una notificación de ejemplo sin usar modelos reales</p>
+                <small>12 May 2025 10:30</small>
+            </div>
+        </div>
+        
+        <!-- Notificación 2 -->
+        <div class="notification demo">
+            <div class="notification-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="notification-content">
+                <h3>Recordatorio importante</h3>
+                <p>Cuando implementes los modelos, estas notificaciones serán dinámicas</p>
+                <small>10 May 2025 14:15</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="demo-message">
+        <i class="fas fa-info-circle"></i>
+        <p>Esta es una demostración estática. Los modelos reales se implementarán después.</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+<title>Inicio - Mi Sitio Web</title>
+{% endblock title%}
+
+
+{% block content %}
+    <h1>Bienvenido a Mi Sitio Web</h1>
+    <p>Este es el contenido de la página de inicio. Puedes añadir más elementos aquí como imágenes, enlaces, etc.</p>
+    <p>¡Explora nuestro sitio!</p>
+{% endblock %}
+
+{% block footer %}
+    {{ block.super }} {# Esto mantiene el contenido del footer de base.html si existe #}
+    <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+{% endblock %}
