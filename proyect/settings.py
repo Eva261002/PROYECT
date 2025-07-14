@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'proyect',
     'books',
-    'notifications',
+    'notifications', 
 ]
 
 MIDDLEWARE = [
@@ -74,14 +74,27 @@ WSGI_APPLICATION = 'proyect.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-
+""" 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+"""
+import pymysql
+pymysql.install_as_MySQLdb()
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'msql01',
+        'USER': 'eva',  # Corregí 'eval' a 'eva' según tu .env
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
+        'PORT': '3307',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -105,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-Bolivia'
 
 TIME_ZONE = 'UTC'
 
